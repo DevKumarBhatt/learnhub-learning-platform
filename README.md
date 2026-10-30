@@ -1,59 +1,97 @@
-# LearnhubTemp
+# LearnHub – Online Learning Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.27.
+LearnHub is a modern online learning platform frontend built with **Angular 21**. It provides a simple and user-friendly interface where learners can explore courses, view course details, and access login and signup pages.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Home Page:** Introduction to the LearnHub platform.
+- **Courses Page:** Explore available courses.
+- **Course Details:** View course information and syllabus.
+- **Login Page:** User login interface.
+- **Signup Page:** New user registration interface.
+- **Navigation:** Smooth navigation using Angular Router.
+- **Responsive UI:** Layout designed for different screen sizes.
 
-```bash
-ng serve
+## 🛠️ Tech Stack
+
+- Angular 21
+- TypeScript
+- HTML5
+- CSS3
+- Angular Router
+- Node.js
+- npm
+
+## 📂 Project Structure
+
+```text
+learnhub-learning-platform/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── pages/
+│   │   │   ├── home/
+│   │   │   ├── courses/
+│   │   │   ├── course-details/
+│   │   │   ├── login/
+│   │   │   └── signup/
+│   │   ├── app.ts
+│   │   ├── app.html
+│   │   └── app.routes.ts
+│   └── styles.css
+├── angular.json
+├── package.json
+└── README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ⚙️ Installation and Setup
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone the repository:
 
 ```bash
-ng generate component component-name
+git clone https://github.com/DevKumarBhatt/learnhub-learning-platform.git
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Navigate to the project directory:
 
 ```bash
-ng generate --help
+cd learnhub-learning-platform
 ```
 
-## Building
-
-To build the project run:
+3. Install dependencies:
 
 ```bash
-ng build
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+4. Start the development server:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+5. Open your browser and visit:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```text
+http://localhost:4200/
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📚 Available Courses
 
-## Additional Resources
+- Web Development
+- Python Programming
+- Data Analytics
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🎯 Project Objective
+
+The objective of LearnHub is to create an accessible and easy-to-use learning platform interface that helps learners discover courses and explore educational content.
+
+## 👨‍💻 Developer
+
+**Dev Kumar Bhatt**
+
+- GitHub: [DevKumarBhatt](https://github.com/DevKumarBhatt)
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository and share your feedback.
