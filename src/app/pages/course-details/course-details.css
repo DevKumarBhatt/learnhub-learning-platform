@@ -1,0 +1,288 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  color: #20213a;
+  background: #f8f8fc;
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  color: #24213f;
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.logo span,
+.details-content h1 span {
+  color: #6c4ce5;
+}
+
+.details-header nav {
+  display: flex;
+  gap: 30px;
+}
+
+.details-header nav a {
+  color: #555;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.details-header nav a:hover {
+  color: #6c4ce5;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-btn {
+  color: #6c4ce5;
+  border: 1px solid #6c4ce5;
+}
+
+.signup-btn {
+  color: #fff;
+  background: #6c4ce5;
+}
+
+.details-page {
+  padding: 65px 7%;
+}
+
+.details-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 50px;
+  padding: 45px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.tagline {
+  color: #6c4ce5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.details-content h1 {
+  max-width: 600px;
+  margin: 18px 0;
+  font-size: 46px;
+  line-height: 1.2;
+}
+
+.details-content > p:not(.tagline) {
+  max-width: 600px;
+  color: #777;
+  line-height: 1.8;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.course-meta span {
+  padding: 8px 13px;
+  color: #6252a5;
+  background: #f1efff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.enroll-btn {
+  display: inline-block;
+  padding: 13px 23px;
+  color: #fff;
+  background: #6c4ce5;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.enroll-btn:hover,
+.signup-btn:hover {
+  background: #5636cb;
+}
+
+.details-card {
+  padding: 30px;
+  background: #f8f6ff;
+  border: 1px solid #e9e3ff;
+  border-radius: 16px;
+}
+
+.details-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  background: #e9e3ff;
+  border-radius: 16px;
+  font-size: 38px;
+}
+
+.details-card h2 {
+  margin: 20px 0 10px;
+}
+
+.details-card > p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.details-card hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e5e0f5;
+}
+
+.syllabus-section {
+  max-width: 850px;
+  margin: 75px auto;
+}
+
+.syllabus-section > h2 {
+  margin: 12px 0 30px;
+  font-size: 32px;
+}
+
+.syllabus-list {
+  display: grid;
+  gap: 15px;
+}
+
+.syllabus-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #eeeef5;
+  border-radius: 12px;
+}
+
+.syllabus-item > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  color: #6c4ce5;
+  background: #f0edff;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.syllabus-item h3 {
+  margin: 3px 0 8px;
+}
+
+.syllabus-item p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.enroll-section {
+  padding: 45px 20px;
+  background: #eeeaff;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.enroll-section h2 {
+  font-size: 30px;
+}
+
+.enroll-section p {
+  margin-bottom: 25px;
+  color: #777;
+}
+
+.details-footer {
+  padding: 22px;
+  color: #777;
+  background: #fff;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .details-hero {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .details-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .details-header {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .details-header nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .header-actions {
+    gap: 7px;
+  }
+
+  .details-page {
+    padding: 30px 5%;
+  }
+
+  .details-hero {
+    padding: 22px;
+  }
+
+  .details-content h1 {
+    font-size: 30px;
+  }
+
+  .syllabus-section {
+    margin: 45px auto;
+  }
+
+  .syllabus-item {
+    gap: 12px;
+    padding: 16px;
+  }
+}
