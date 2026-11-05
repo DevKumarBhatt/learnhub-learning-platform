@@ -20,6 +20,20 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'python-details',
+    loadComponent: () =>
+      import('./pages/python-details/python-details').then(
+        (m) => m.PythonDetails
+      ),
+  },
+  {
+    path: 'data-analytics-details',
+    loadComponent: () =>
+      import('./pages/data-analytics-details/data-analytics-details').then(
+        (m) => m.DataAnalyticsDetails
+      ),
+  },
+  {
     path: 'login',
     loadComponent: () =>
       import('./pages/login/login').then((m) => m.Login),
@@ -34,4 +48,3 @@ export const routes: Routes = [
     redirectTo: '',
   },
 ];
-
